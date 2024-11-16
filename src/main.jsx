@@ -2,13 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Mainlayout from './assets/components/Mainlayout';
-import Home from './assets/components/Home';
-import Register from './assets/components/Register';
-import Login from './assets/components/Login';
-import AuthProvider from './assets/providers/AuthProvider';
-import Orders from './assets/components/Orders';
+import Home from './components/Home';
+import Register from './components/Register';
+import Login from './components/Login';
+import Orders from './components/Orders';
+import Mainlayout from './components/Mainlayout';
 import PrivateRoute from './PrivateRoute';
+import AuthProvider from './providers/AuthProvider';
 
 const router = createBrowserRouter([
   {

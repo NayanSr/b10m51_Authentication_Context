@@ -4,10 +4,10 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = () => {
 
-    const {user, signoutUser}= useContext(AuthContext);
+    const {user, signOutUser}= useContext(AuthContext);
     console.log(user);
     const handleSignout=()=>{
-      signoutUser()
+      signOutUser()
       .then(()=>{
         console.log('user sign out successfully');
       })
@@ -21,7 +21,9 @@ const Navbar = () => {
         <NavLink to='/'>Home</NavLink>
         <NavLink className='mx-4' to='/register'>Register</NavLink>
         <NavLink to='/login'>Login</NavLink>
-        <NavLink className='mx-4' to='/order'>Orders</NavLink>
+       {
+        user &&  <NavLink className='mx-4' to='/order'>Orders</NavLink>
+       }
     </>
     return (
         <div className="navbar bg-base-100">

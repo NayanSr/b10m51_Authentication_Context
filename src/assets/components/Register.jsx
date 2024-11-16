@@ -69,7 +69,7 @@ const {createUser}= useContext(AuthContext)
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary">Register</button>
           </div>
           <p>
             Already have an account ? <Link to="/login">Login</Link>

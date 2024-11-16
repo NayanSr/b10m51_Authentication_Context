@@ -24,6 +24,7 @@ const Navbar = () => {
        {
         user &&  <NavLink className='mx-4' to='/order'>Orders</NavLink>
        }
+       <NavLink className='ml-4' to='/profile'>Profile</NavLink>
     </>
     return (
         <div className="navbar bg-base-100">
